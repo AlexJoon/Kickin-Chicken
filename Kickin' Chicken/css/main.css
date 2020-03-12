@@ -1,0 +1,718 @@
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+
+/* To get rid of pre-set margin & padding that browsers adjust to a webpage. */
+*{
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+
+
+body{
+
+    font-family: 'Montserrat', sans-serif;
+    background: ivory;
+    
+}
+
+header{
+
+    background: lightsalmon;
+    padding: 1.25em;
+    border: 1px solid gray;
+    position: fixed; 
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+
+}
+
+nav{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.menu{
+
+    width: 30px;
+
+}
+
+nav ul li{
+
+    list-style-type: none;
+    display: inline;
+
+
+}
+
+.align{
+
+    text-align: center;
+
+}
+
+nav a{
+
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 3px 20px;
+    font-size: 1.5em;
+
+}
+
+nav li a:hover{
+
+    background: coral;
+    color: black;
+    border-radius: 10px;
+
+}
+
+
+#first{
+
+    display: grid;
+
+}
+
+.chicken-bg, .titleInfo{
+
+    grid-area: 1 / 1;
+
+}
+
+.chicken-bg{
+
+    background-image: url('../images/index-bg.jpg');
+    background-position: center center;
+    height: 50vh;
+    border-bottom: 4px solid darkgray;
+    
+
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(-80px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.titleInfo{
+
+    text-align: center;
+    width: 500px;
+    color:black;
+    background: white;
+    border-radius:10px;
+    padding: 30px;
+    margin: 25vh auto ;
+    box-shadow: 10px 10px 10px rgba(0,0,0,.3);
+    -webkit-animation: fadeInUp 500ms ease-in-out; /* Chrome, Safari, Opera */
+    animation: fadeInUp 500ms ease-in-out;
+    z-index: 100;
+    
+}
+
+.titleInfo img{
+
+    width: auto;
+    height: 125px;
+    border: 1px solid gray;
+    border-radius: 50%;
+    padding: 1.25em;
+    margin-bottom: 10px;
+
+}
+
+.titleInfo img:hover{
+
+    box-shadow: 10px 10px 10px rgba(0,0,0,.3);
+
+}
+
+.titleInfo h1{
+
+    font-size: 2.5em;
+
+}
+
+
+.titleInfo h3{
+
+    padding-bottom: 15px;
+    font-size: 1.5em;
+
+}
+
+.titleInfo p{
+
+    padding-top: 1.5em;
+    padding-bottom: 2em;
+
+}
+
+.titleInfo form{
+
+    margin-top: 1.75em;
+
+}
+
+
+.Search label{
+
+    font-size: 1.25em;
+
+}
+
+.titleInfo input[type="text"]{
+
+    width: 100%;
+    padding: 10px;
+    margin-top: 1.50em;
+    margin-bottom: 1.50em;
+    border-radius: 5px;
+
+}
+
+
+.titleInfo input[type="button"]{
+
+    padding: 15px;
+    width: 60%;
+    margin: 0 auto;
+    border-radius: 10px;
+    background: lightsalmon;
+    font-size: 1.1em;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Chrome, Safari, Opera */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(40px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+    }
+}
+
+#aboutMain{
+
+    margin-top: 70px;
+   
+}
+
+
+#aboutUs{
+
+    padding-bottom: 2rem;
+    display:grid;
+ 
+}
+
+.about-bg{
+
+    height: 60vh;
+    background-image: url('../images/about-bg.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-bottom: 4px solid darkgray;
+
+}
+
+.about-bg, .aboutInfo, .menuContainer, .form-container, .mainMerch{
+
+    grid-area: 1 / 1;
+
+}
+
+.aboutInfo{
+
+    text-align: center;
+    margin: 3.5em auto 0;
+    width: 50%;
+    background: white;
+    padding: 1em;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(0,0,0,.3);
+    -webkit-animation: fadeInDown 500ms ease-in-out; /* Chrome, Safari, Opera */
+    animation: fadeInDown 500ms ease-in-out;
+
+
+}
+
+.aboutInfo h1{
+
+    margin-top: 2rem;
+    font-size: 32px;
+    border-bottom: 1px solid gray;
+    padding-bottom: 0.75rem;
+    
+}
+
+.aboutInfo iframe{
+
+    margin-top: 1.5em;
+    border-radius: 10px;
+    width: 60%;
+    
+    
+}
+
+
+.paragraphOne, .paragraphTwo{
+
+    padding-top: 20px;
+    width: 85%;
+    margin: 0 auto;
+  
+
+}
+
+
+.chickVid{
+
+    padding-top: 2em;
+
+}
+
+.mainMenu{
+
+    height: 100vh;
+
+}
+
+.menuContainer{
+
+    background: white;
+    width:55%;
+    margin: 3.5em auto 0;
+    border-radius: 10px;
+    -webkit-animation: fadeInDown 500ms ease-in-out; /* Chrome, Safari, Opera */
+    animation: fadeInDown 500ms ease-in-out;
+    box-shadow: 10px 10px 10px rgba(0,0,0,.3);
+
+
+}
+
+
+.menuTable{
+
+    overflow-y: scroll;
+    height: 800px;
+
+
+}
+
+
+
+.menuTable img{
+
+    width: 150px;
+    height: 150px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    transition: transform .5s ease;
+    box-shadow: 10px 10px 10px rgba(0,0,0,.3);
+
+}
+
+
+.menuTable table{
+    
+    margin: auto;
+    text-align: center;
+
+}
+
+
+.menuTable h2{
+
+    padding-top: 1.25em;
+    padding-bottom: 1em;
+    text-align: center;
+
+}
+
+.menuTable table td span{
+
+    font-size: 24px;
+
+}
+
+.menuTable table th{
+
+    border-bottom: 1px solid black;
+    font-size: 20px;
+    
+
+}
+
+.menuTable table td ul li{
+
+    list-style-position: inside;
+
+}
+
+.menuTable table td, th{
+
+    padding: 1.5em;
+
+}
+
+.form-container{
+
+    background: white;
+    box-shadow: 10px 10px 10px rgba(0,0,0,.3);
+    border-radius: 10px;
+    padding: 20px;
+    width: 60%;
+    margin: 3.5em auto 0;
+    -webkit-animation: fadeInDown 500ms ease-in-out; /* Chrome, Safari, Opera */
+    animation: fadeInDown 500ms ease-in-out;
+    
+
+}
+
+.actualForm{
+
+    text-align:center;
+
+}
+
+.actualForm form label, input{
+
+    display: block;
+    margin-bottom: 10px;
+
+}
+
+.actualForm form input[type="text"], input[type="email"]{
+
+    padding: 10px;
+    border-radius: 10px;
+    width: 50%;
+    margin: 0 auto 1.25em;
+
+
+}
+
+.actualForm h2{
+
+    font-size: 26px;
+    margin-bottom: 1.20em;
+
+}
+
+.actualForm form input[type="checkbox"]{
+
+    width: 50%;
+    margin: 0 auto 1.25em;
+    border-radius: 5px;
+
+}
+
+.actualForm hr{
+
+    width: 75%;
+    margin: 0 auto 1.5em;
+
+
+}
+
+.actualForm select{
+
+    padding: 5px;
+    border-radius: 10px;
+    width: 30%;
+    margin-bottom: 1.25em;
+
+}
+
+.actualForm img{
+
+    display: block;
+    width: 200px;
+    margin: 0 auto 1.25em;
+
+}
+
+.actualForm form input[type="submit"]{
+
+    margin: 2em auto 1.25em;
+    padding: 10px 15px;
+    width: 40%;
+    border-radius: 10px;
+    background: lightsalmon;
+    color: white;
+    font-size: 20px;
+
+    /* Buttons dont take font-family from parent elements so I am specifying again for the submit button. */
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.mainMerch{
+
+    -webkit-animation: fadeInDown 500ms ease-in-out; /* Chrome, Safari, Opera */
+    animation: fadeInDown 500ms ease-in-out;
+
+}
+
+.mainMerch h1{
+
+    margin-top: 1.25em;
+    margin-bottom: 1.25em;
+    
+
+}
+
+.merch-container{
+
+    background: white;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(0,0,0,.3);
+    width: 65%;
+    margin: 3.5em auto 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.Individual{
+
+    width: 300px;
+    text-align: center;
+
+}
+
+.Individual img{
+
+    width: 150px;
+    height: 150px;
+    border: 1px solid gray;
+    box-shadow: 10px 10px 10px rgba(0,0,0,.3);
+    border-radius: 10px;
+    margin: 1.7em 0 2em;
+    transition: transform .5s ease;
+
+}
+
+.Individual img:hover, .menuTable img:hover{
+
+    transform: scale(1.25);
+
+}
+
+.merchPara{
+
+    display: inline-block;
+    margin-bottom: 0.5rem;
+
+
+}
+
+.merchPara p{
+
+    margin: 0 auto 1.5em;
+    width: 75%;
+
+}
+
+.merchPara span{
+
+    font-weight: bold;
+    font-size: 18px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid black;
+
+}
+
+.merchButton{
+
+    margin: 2em 0;
+
+}
+
+
+
+.merchButton a{
+
+    border: 1px solid gray;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    background: lightsalmon;
+    color:white;
+    font-size: 18px;
+
+
+}
+
+.merchButton a:hover, form input[type="submit"]:hover, input[type="button"]:hover{
+
+    color: black;
+    background: coral;
+
+}
+
+@media only screen and (min-width: 1024px){
+
+    .hide-desktop{
+
+        display: none;
+
+    }
+
+   
+
+}
+
+
+@media only screen and (max-width: 1024px){
+
+    .aboutInfo, .menuContainer{
+
+        width: 85%;
+
+    }
+
+    .hide-nav{
+
+        display: none;
+
+    }
+
+    nav ul li {
+
+        display: block;
+
+    }
+
+}
+
+
+/* Tablet resolutions. */
+@media only screen and (max-width: 940px){
+
+    
+    .Individual{
+
+        width: 100%;
+
+    }
+
+    .merchPara{
+
+        margin-bottom: 0.75rem;
+
+    }
+
+    .merchButton a{
+
+        padding: 10px 50px;
+
+    }
+
+  
+
+}
+
+/* Tablet resolutions. */
+@media only screen and (max-width: 768px){
+
+    .titleInfo{
+
+        width: 100%;
+        border-radius: 0;
+
+    }
+
+    .titleInfo h1{
+
+        font-size: 2em;
+
+    }
+
+    .titleInfo h3{
+
+        font-size: 1.25em;
+
+    }
+
+    .titleInfo img{
+
+        height: 165px;
+
+    }
+
+    .aboutInfo, .aboutInfo iframe{
+
+        width: 85%;
+
+    }
+
+    .paragraphOne, .paragraphTwo{
+
+        width: 95%;
+
+    }
+
+    .menuContainer{
+
+        width: 100%;
+        border-radius: 0;
+
+    }
+
+    .actualForm form select{
+
+        width: 65%;
+
+    }
+
+    .form-container, .actualForm form input[type="text"], .actualForm form input[type="email"]{
+
+        width: 85%;
+
+    } 
+
+    .merch-container, .merchPara p{
+
+        width: 85%;
+
+    }
+
+
+}
